@@ -1,3 +1,4 @@
+import AddPost from "@/components/AddPost";
 import Stories from "@/components/Stories";
 
 const Homepage = () => {
@@ -8,8 +9,11 @@ const Homepage = () => {
         Left menu
       </div>
       <div className="w-full lg:w-[70%] xl:w-[50%]">
-        <Stories />
-        Add Post Feed
+        <div className="flex flex-col gap-6">
+          <Stories />
+          <AddPost />
+          Feed
+        </div>
       </div>
       <div className="w-[30%] hidden xl:block">Right menu</div>
     </div>
